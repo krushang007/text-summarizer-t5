@@ -95,12 +95,12 @@ def summarize_dialogue(dialogue: str, model, tokenizer, device, max_length=128, 
 
 def main():
     parser = argparse.ArgumentParser(description="Train T5 on SAMSum dataset")
-    parser.add_argument("--model_name", type=str, default="t5-small", help="Model checkpoint (t5-small, t5-base, etc.)")
+    parser.add_argument("--model_name", type=str, default="t5-base", help="Model checkpoint (t5-small, t5-base, etc.)")
     parser.add_argument("--train_file", type=str, default="samsum-train.csv")
     parser.add_argument("--val_file", type=str, default="samsum-validation.csv")
     parser.add_argument("--test_file", type=str, default="samsum-test.csv")
     parser.add_argument("--output_dir", type=str, default="./saved_summary_model")
-    parser.add_argument("--epochs", type=int, default=3)
+    parser.add_argument("--epochs", type=int, default=10)
     parser.add_argument("--batch_size", type=int, default=4)
     parser.add_argument("--grad_accum", type=int, default=2)
     parser.add_argument("--lr", type=float, default=5e-5)
