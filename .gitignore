@@ -17,13 +17,9 @@ __pycache__/
 # macOS
 .DS_Store
 
-# Training artifacts & model weights (exceeds GitHub 100MB file limit)
+# Temporary training checkpoints & logs (not needed for running the final model)
 checkpoints/
 results/
 runs/
 wandb/
-*.safetensors
-*.bin
-*.pt
-*.pth
-saved_summary_model/
+training.log
