@@ -1,0 +1,29 @@
+# Python virtual environment
+.venv/
+venv/
+env/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Training artifacts & model weights (exceeds GitHub 100MB file limit)
+checkpoints/
+results/
+runs/
+wandb/
+*.safetensors
+*.bin
+*.pt
+*.pth
+saved_summary_model/
